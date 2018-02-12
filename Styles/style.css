@@ -1,0 +1,737 @@
+html {
+  font-family: 'Raleway', sans-serif;
+}
+
+#logo {
+  color: #666666;
+  font-size: 25px;
+}
+
+#sideNav {
+  display: none;
+  background-color: white;
+  width: 50%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  box-shadow: 200px 0px 100px rgba(0, 0, 0, .2);
+}
+
+#dropdown {
+  padding: 0;
+  margin: 0;
+}
+
+.listitem {
+  text-decoration: none;
+  list-style: none;
+  padding: 5px 5px;
+  font-weight: bold;
+}
+
+.sideHome,
+.sideEveryday,
+.sideDress,
+.sideJean,
+.sideCart {
+  background: rgb(235, 235, 235);
+  border-bottom: 1px solid white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px;
+  margin: 0;
+  align-items: center;
+  line-height: .3em;
+  font-size: .9em;
+}
+
+.signIn {
+  font-size: .8em;
+  font-weight: bold;
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+  line-height: .3em;
+}
+
+.sideCart .cartButton {
+  font-size: 20px;
+}
+
+.liFluff {
+  font-size: .8em;
+  border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.signIn p {
+  padding-left: 5px;
+}
+
+.collectionDiv {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.collectionImage {
+  width: 98%;
+  height: auto;
+  margin-top: 3%;
+}
+
+.collectionText {
+  position: absolute;
+  top: 10%;
+  bottom: 10%;
+  right: 5%;
+  left: 5%;
+  text-shadow: -1px 0 3px rgba(0, 0, 0, .3), 0 1px 3px rgba(0, 0, 0, .3), 1px 0 3px rgba(0, 0, 0, .3), 0 -1px 3px rgba(0, 0, 0, .3);
+}
+
+#sideNav {
+  display: none;
+}
+
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 9;
+  background-color: white;
+  width: 96%;
+  padding: 5px 0;
+}
+
+.topnav i,
+.topnav p {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+#everyDayShirtsCollectionPage {
+  display: none;
+}
+
+#dressShirtsCollectionPage {
+  display: none;
+}
+
+#jeansCollectionPage {
+  display: none;
+}
+
+#cartPage {
+  display: none;
+}
+
+/* #receiptPage {
+    /* display: none; */
+
+/* } */
+
+#paymentChoice {
+  display: none;
+}
+
+.productDiv {
+  display: inline-block;
+  width: 98%;
+  height: 150px;
+  margin-top: 3%;
+}
+
+.productText {
+  margin-left: 3%;
+  height: 100px;
+  float: left;
+  width: 60%;
+}
+
+.quantityInput {
+  width: 45px;
+}
+#qtySubtotal{
+  display: inline-block;
+}
+
+h2,
+h3,
+h4 {
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+
+.productImage {
+  width: auto;
+  height: 130px;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  float: left;
+  margin-left: 3%;
+}
+
+button {
+  min-width: 45px;
+  height: 45px;
+  background-color: #666666;
+  color: white;
+  float: left;
+  margin-right: 1%;
+  border: none;
+}
+.productBuyButton:hover, .productRemoveButton:hover, #ccPayButton:hover, #cashButton:hover, #creditCardButton:hover {
+  background-color: black;
+}
+.productBuyButton{
+  float: right;
+  margin-top: -12%;
+}
+.productRemoveButton {
+  float: right;
+  margin-top: 0%;
+}
+.productPriceCalc {
+  display: none;
+}
+#creditCardPay {
+  color: #666666;
+  text-align: center;
+}
+
+#creditCardPay h2,
+#creditCardPay h4 {
+  padding: 0;
+  margin: 5px 30px;
+}
+
+#creditCardPay h4 {
+  border-bottom: 1px solid #666666;
+  margin-bottom: 10px;
+}
+
+select {
+  font-size: 13px;
+  font-family: "Raleway", sans-serif;
+}
+
+texatrea:focus,
+input:focus,
+select:focus {
+  outline: none;
+}
+
+.form-input {
+  border-style: none;
+  margin: 5px 0;
+  border-bottom: 1px solid #666666;
+  width: 40%;
+  float: left;
+  margin-left: 15px;
+}
+
+.owner,
+.CVV,
+#card-number-field {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.owner label,
+.CVV label,
+#card-number-field label {
+  width: 36%;
+  text-align: right;
+  float: left;
+  padding-top: 5px;
+}
+
+#cvv {
+  width: 30px;
+}
+
+#cardNumber {
+  width: 135px;
+}
+
+.select-input {
+  margin-top: 3px;
+}
+
+#expiry {
+  width: 36%;
+  text-align: right;
+  float: left;
+  margin: 0;
+}
+
+#month {
+  float: left;
+  margin-left: 15px;
+}
+
+#year {
+  float: left;
+}
+
+#ccPay {
+  margin-top: 50px;
+}
+
+#main,
+#everyDayShirtsCollectionPage,
+#dressShirtsCollectionPage,
+#jeansCollectionPage,
+#paymentChoice,
+#cartPage,
+#cashPay {
+  margin-top: 40px;
+}
+
+#paymentChoice {
+  display: flex;
+  padding: 10px;
+}
+
+#cashPay {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+}
+
+#ccPayButton {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.payment {
+  display: flex;
+  flex-direction: column;
+}
+
+#creditCardPay {
+  margin-top: 60px;
+}
+
+#cartCounter {
+  position: fixed;
+  right: 7px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: blueviolet;
+  font-weight: bold;
+}
+
+#cartCounter p {
+  font-size: 10px;
+  font-weight: bold;
+  color: white;
+  padding-left: 3px;
+}
+
+.footer {
+  position: static;
+  bottom: 0;
+  background-color: #e6ffff;
+}
+
+hr {
+  width: 98%;
+}
+
+#emailFooter {
+  display: inline;
+}
+
+#emailButton {
+  float: right;
+  margin-right: 3%;
+}
+
+#emailHeadline {
+  margin-bottom: 0px;
+}
+
+#emailFooter input {
+  padding-left: 5px;
+  font-size: .8em;
+  border: none;
+  border-bottom: 1px solid rgb(230, 230, 230);
+  width: 75%;
+  height: 42px;
+  background-color: inherit;
+  margin-bottom: 20px;
+}
+
+#payNow {
+  width: 100%;
+}
+
+#cashTotalBefore,
+#cashSalesTax,
+#cashPayTotal {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+  margin: 0;
+}
+
+#cashTotalBeforeCC,
+#cashSalesTaxCC,
+#cashPayTotalCC {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+  margin: 0;
+}
+
+.cashLabel {
+  margin-top: 20px;
+  width: 98%;
+  border: 1px solid #666666;
+  padding: 5px;
+  background-color: #666666;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#cashTendered {
+  width: 98%;
+  border: 1px solid #666666;
+  padding: 5px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.1em;
+  margin-bottom: 40px;
+}
+
+#cashTotalBefore p,
+#cashSalesTax p,
+#cashPayTotal p {
+  margin: 3px 0;
+  padding: 0;
+  padding-right: 10px;
+}
+
+#cashTotalBeforeCC p,
+#cashSalesTaxCC p,
+#cashPayTotalCC p {
+  margin: 3px 0;
+  padding: 0;
+  padding-right: 10px;
+}
+
+.typeTo {
+  margin: 3px 10px !important;
+  width: 50px !important;
+}
+
+#cashPay hr {
+  width: 135px;
+  float: right;
+  margin-right: 15px;
+}
+
+#ccPay hr {
+  width: 135px;
+  margin-right: 15px;
+}
+
+.cashPaySubmit {
+  margin-top: 30px;
+}
+
+.cashFormFail,
+.cashFail {
+  text-align: center;
+}
+
+#receiptPage {
+  display: block;
+  margin-top: 60px;
+}
+
+.h2Receipt {
+  text-align: center;
+}
+
+#invoicePayment,
+#invoiceCard,
+#invoiceTotal,
+#invoiceCashPaid,
+#invoiceCashChange {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+}
+
+#invoicePayment p,
+#invoiceCard p,
+#invoiceTotal p,
+#invoiceCashPaid p,
+#invoiceCashChange p {
+  margin: 5px 0;
+  padding: 0;
+  text-align: right;
+  width: 150px;
+}
+
+.invoiceWrite {
+  margin-left: 15px !important;
+  text-align: left !important;
+  width: 100px !important;
+}
+#cartPage h3 {
+  text-align: left;
+}
+.qtySubtotal {
+  display: inline-block;
+}
+.qtySubtotalCost {
+  display: inline-block;
+}
+
+#payMethods{
+  display: flex;
+}
+#cashButton, #creditCardButton {
+  padding: 10px 0;
+  width: 50%;
+}
+
+#main,
+#everyDayShirtsCollectionPage,
+#cashPay,
+#receiptPage,
+#creditCardPay,
+#paymentChoice,
+#jeansCollectionPage,
+#dressShirtsCollectionPage {
+  min-height: calc(100vh - 70px);
+}
+#sideNavAsTop{
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  #sideNav{
+    display: none;
+  }
+  body {
+    background-color: white;
+  }
+  .topnav {
+    justify-content: space-between;
+    z-index: 9;
+    width: 99%;
+    padding-left: 1%;
+  }
+  #logo {
+    order: 1;
+  }
+  .topnav .sideNavButton {
+    display: none;
+  }
+  .topnav .cartButton {
+    order: 2;
+    margin-right: 10px;
+    padding-right: 15px;
+  }
+  #sideNavAsTop{
+    display: inline-block;
+    position: fixed;
+    top: -10px;
+    left: 210px;
+    z-index: 10;
+    font-size: 1em;
+  }
+  #dropdownTop {
+    display: flex;
+  }
+  #dropdownTop li {
+    background-color: white;
+    margin: 0 5px;
+  }
+  #everyDayShirtsCollectionImage {
+    width: 110%;
+    height: auto;
+    z-index: 8;
+    overflow: hidden;
+    margin-top: -5px;
+  }
+  #dressShirtsCollectionDiv{
+    width: 50%;
+    overflow: hidden;
+    height: auto;
+    float: left;
+  }
+  #jeansColletionDiv {
+    width: 50%;
+    overflow: hidden;
+    height: auto;
+    float: right;
+  }
+  .collectionText h1 {
+    font-size: 2em;
+    margin: 0px;
+  }
+  .collectionText h6 {
+    font-size: 1em;
+    margin-top: 10px;
+  }
+
+  #everyDayShirtsCollectionDiv h1 {
+    font-size: 5em;
+  }
+  #everyDayShirtsCollectionDiv h6 {
+    font-size: 2em;
+  }
+
+  hr.footer {
+    width: 100%;
+  }
+  #emailFooter {
+    display: flex;
+    justify-content: center;
+  }
+  #emailHeadline{
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-bottom: 5px;
+    padding-right: 20px;
+  }
+  #emailFooter input {
+    width: 20%;
+    border: 1px solid #666666;
+    background-color: inherit;
+  }
+  hr {
+    width: 80%;
+  }
+  .productImage {
+    height: auto;
+    width: 20%;
+    margin-left: 20%;
+  }
+  .productDiv {
+    height: auto;
+    width: 70%;
+    margin-top: 0%;
+  }
+  .productText {
+    margin-left: 3%;
+    margin-left: 7%;
+    margin-top: 3%;
+    height: auto;
+    float: left;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+  }
+
+  .productBuyButton,
+  .productRemoveButton {
+    border: none;
+    width: 20%;
+    min-width: 45px;
+    margin-top: 10%;
+  }
+  #payMethods {
+    display: flex;
+    justify-content: center;
+  }
+  #cashButton, #creditCardButton{
+    width:30%;
+    padding: 10px 0;
+  }
+
+  #owner {
+    width: 150px;
+  }
+  form {
+    padding: 0 10px;
+    margin: 0 auto;
+    white-space: nowrap;
+  }
+  #ccPayButton {
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 50%;
+  }
+  #ccPay {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  #creditCardPay h4 {
+    margin: 0 auto;
+    white-space: nowrap;
+  }
+
+  #cashTendered{
+    width: 30.6%;
+    margin-left: 34.6%;
+    padding: 15px 0;
+    font-size: 1.2em;
+  }
+  .cashLabel{
+    width:30%;
+  }
+  #cashTotalBefore, #cashSalesTax, #cashPayTotal {
+    margin-right: 45%;
+  }
+  #cashPay hr {
+    margin-right: 47%;
+  }
+  .cashPaySubmit{
+    width: 30%;
+    margin-left: 35%;
+  }
+  #invoice {
+    margin-right: 42%;
+  }
+
+  #cartCounter {
+    position: fixed;
+    right: 25px;
+    top: 3px;
+    width: 2em;
+    height: 2em;
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
+    font-weight: bold;
+  }
+
+  #cartCounter p {
+    font-size: 1.3em !important;
+    color: rgb(0, 0, 0);
+    padding-left: 3px;
+  }
+  .listitem {
+    text-decoration: none;
+    list-style: none;
+    padding: 0px 5px;
+    font-weight: bold;
+  }
+
+  .jeanButton,
+  .cartButton,
+  .homeButton,
+  .everydayButton,
+  .dressButton,
+  .sideNavButton {
+    cursor: pointer;
+  }
+}

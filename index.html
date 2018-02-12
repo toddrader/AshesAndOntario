@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ashes &#38; Ontario</title>
+    <link rel="stylesheet" href="Styles/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <script src="Scripts/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="icon" href="Images/T-235x235.png" type="image/gif" sizes="16x16">
+</head>
+
+<body>
+    <div id="sideNav">
+        <ul id="dropdown">
+            <li class="listitem signIn">
+                <i class="material-icons">account_circle</i>
+                <p>Hello, Sign In</p>
+            </li>
+            <li class="listitem sideHome homeButton">
+                <p>HOME</p>
+                <i class="material-icons liIcon">navigate_next</i>
+            </li>
+            <li class="listitem sideEveryday everydayButton">
+                <p>EVERYDAY SHIRTS</p>
+                <i class="material-icons liIcon">navigate_next</i>
+            </li>
+            <li class="listitem sideDress dressButton">
+                <p>DRESS SHIRTS</p>
+                <i class="material-icons liIcon">navigate_next</i>
+            </li>
+            <li class="listitem sideJean jeanButton">
+                <p>JEANS</p>
+                <i class="material-icons liIcon">navigate_next</i>
+            </li>
+            <li class="listitem sideCart cartButton">
+                <p>CART</p>
+                <i class="material-icons paymentPage cartButton liIcon">shopping_cart</i>
+            </li>
+            <li class="listitem liFluff">TRACK ORDER</li>
+            <li class="listitem liFluff">SALE</li>
+            <li class="listitem liFluff">HELP</li>
+            <li class="listitem liFluff">FIND A STORE</li>
+        </ul>
+    </div>
+    <div id="sideNavAsTop">
+        <ul id="dropdownTop">
+            <li class="listitem sideEveryday everydayButton">
+                <p>EVERYDAY SHIRTS</p>
+            </li>
+            <li class="listitem sideDress dressButton">
+                <p>DRESS SHIRTS</p>
+            </li>
+            <li class="listitem sideJean jeanButton">
+                <p>JEANS</p>
+            </li>
+            <li class="listitem signIn">
+                <p>Hello, Sign In</p>
+            </li>
+        </ul>
+    </div>
+    <div class="topnav">
+        <i class="material-icons sideNavButton">menu</i>
+        <p id="logo" class="homeButton">
+            <strong>ASHES</strong>&#38;<strong>ONTARIO</strong>
+        </p>
+        <i class="cartPayIcon material-icons cartButton">shopping_cart</i>
+        <span id="cartCounter">
+            <p class="cartButton"></p>
+        </span>
+    </div>
+    <div id="main">
+        <div class="collectionDiv everydayButton" id="everyDayShirtsCollectionDiv">
+            <img id="everyDayShirtsCollectionImage" class="collectionImage" alt="Everyday Shirts Collection" src="Images/everyday1.jpg">
+            <div class="collectionText">
+                <h1>Everyday Shirts Collection</h1>
+                <h6>It's an everyday casual button down that can be worn at work, play, or school – everyday.</h6>
+            </div>
+        </div>
+        <div class="collectionDiv dressButton" id="dressShirtsCollectionDiv">
+            <img id="dressShirtsCollectionImage" class="collectionImage dressButton" alt="Dress Shirts Collection" src="Images/dress4.jpg">
+            <div class="collectionText">
+                <h1>Dress Shirts Collection</h1>
+                <h6>These dress shirts are designed to be tucked in and will take you from the interview to the corner office.</h6>
+            </div>
+        </div>
+        <div class="collectionDiv jeanButton" id="jeansColletionDiv">
+            <img id="jeansCollectionImage" class="collectionImage" alt="Jeans Collection" src="Images/jeans1.jpg">
+            <div class="collectionText">
+                <h1>Jeans Collection</h1>
+                <h6>These slim-fit jeans have a slight stretch that makes them comfortable to wear all day at school, everyday.</h6>
+            </div>
+        </div>
+    </div>
+    <!-- <<<<<<<<<<<<<< EVERY DAY SHIRTS >>>>>>>>>>>>>>>>>>>>>>>>> -->
+    <div class="productPage" id="everyDayShirtsCollectionPage">
+        <div class="product1 productDiv">
+            <img class="productImage" src="Images/everyday3.jpg">
+            <div class="productText">
+                <h2>Everyday Shirt 1</h2>
+                <p>Amet tortor euismo curae.</p>
+                <h3 class="product1 price">$79</h3>
+                  <label class="quantityLabel" for="quantity">Qty</label>
+                  <input class="product1 quantityInput" id="quantityInput1" type="number" value="1">
+                <button data-product-id="1" class="productBuyButton">Buy</button>
+            </div>
+        </div>
+        <hr>
+        <div class="product2 productDiv">
+            <img class="productImage" src="Images/everyday4.jpg">
+            <div class="productText">
+                <h2>Everyday Shirt 2</h2>
+                <p>Id a ultricies a.</p>
+                <h3 class="product2 price">$69</h3>
+                <label class="quantityLabel" for="quantity">Qty</label>
+                <input class="product2 quantityInput" id="quantityInput2" type="number" value="1">
+                <button data-product-id="2" class="productBuyButton">Buy</button>
+            </div>
+        </div>
+        <hr>
+        <div class="product3 productDiv">
+            <img class="productImage" src="Images/everyday5.jpg">
+            <div class="productText">
+                <h2>Everyday Shirt 3</h2>
+                <p>Per volutpat eros condi.</p>
+                <h3 class="product3 price">$59</h3>
+                <label class="quantityLabel" for="quantity">Qty</label>
+                <input class="product3 quantityInput" id="quantityInput3" type="number" value="1">
+                <button data-product-id="3" class="productBuyButton">Buy</button>
+            </div>
+        </div>
+        <hr>
+        <div class="product4 productDiv">
+            <img class="productImage" src="Images/everyday6.jpg">
+            <div class="productText">
+                <h2>Everyday Shirt 4</h2>
+                <p>Lorem ipsum dolor sit ame.</p>
+                <h3 class="product4 price">$74</h3>
+                <label class="quantityLabel" for="quantity">Qty</label>
+                <input class="product4 quantityInput" id="quantityInput4" type="number" value="1">
+                <button data-product-id="4" class="productBuyButton">Buy</button>
+            </div>
+        </div>
+    </div>
+    <!-- <<<<<<<<<<<<<< DRESS SHIRTS >>>>>>>>>>>>>>>>>>>>>>>>> -->
+    <div class="productPage" id="dressShirtsCollectionPage">
+        <div class="product5 productDiv">
+            <img class="productImage" src="Images/dress1.jpg">
+            <div class="productText">
+                <h2>Dress Shirt 1</h2>
+                <p>Sed ut perspiciatis unde.</p>
+                <h3 class="product5 price">$79</h3>
+                <label class="quantityLabel" for="quantity">Qty</label>
+                <input class="product5 quantityInput" id="quantityInput5" type="number" value="1">
+                <button data-product-id="5" id="productBuyButton5" class="productBuyButton">Buy</button>
+            </div>
+        </div>
+        <hr>
+        <div class="product6 productDiv">
+            <img class="productImage" src="Images/dress2.jpg">
+            <div class="productText">
+                <h2>Dress Shirt 2</h2>
+                <p>Quisque a integer par.</p>
+                <h3 class="product6 price">$69</h3>
+                <label class="quantityLabel" for="quantity">Qty</label>
+                <input class="product6 quantityInput" id="quantityInput6" type="number" value="1">
+                <button data-product-id="6" class="productBuyButton">Buy</button>
+            </div>
+        </div>
+        <hr>
+        <div class="product7 productDiv">
+            <img class="productImage" src="Images/dress3.jpg">
+            <div class="productText">
+                <h2>Dress Shirt 3</h2>
+                <p>A eu sed inceptos quam.</p>
+                <h3 class="product7 price">$59</h3>
+                <label class="quantityLabel" for="quantity">Qty</label>
+                <input class="product7 quantityInput" id="quantityInput7" type="number" value="1">
+                <button data-product-id="7" class="productBuyButton">Buy</button>
+            </div>
+        </div>
+        <hr>
+        <div class="product8 productDiv">
+            <img class="productImage" src="Images/dress5.jpg">
+            <div class="productText">
+                <h2>Dress Shirt 4</h2>
+                <p>Ac nisl lacinia a.</p>
+                <h3 class="product4 price">$74</h3>
+                <label class="quantityLabel" for="quantity">Qty</label>
+                <input class="product8 quantityInput" id="quantityInput8" type="number" value="1">
+                <button data-product-id="8" class="productBuyButton">Buy</button>
+            </div>
+        </div>
+    </div>
+    <!-- <<<<<<<<<<<<<< JEANS >>>>>>>>>>>>>>>>>>>>>>>>> -->
+    <div class="productPage" id="jeansCollectionPage">
+        <div class="product9 productDiv">
+            <img class="productImage" src="Images/jeans2.jpg">
+            <div class="productText">
+                <h2>Jeans 1</h2>
+                <p>Vestibu feug condum felis.</p>
+                <h3 class="product5 price">$79</h3>
+                <label class="quantityLabel" for="quantity">Qty</label>
+                <input class="product9 quantityInput" id="quantityInput9" type="number" value="1">
+                <button data-product-id="9" class="productBuyButton">Buy</button>
+            </div>
+        </div>
+        <hr>
+        <div class="product10 productDiv">
+            <img class="productImage" src="Images/jeans3.jpg">
+            <div class="productText">
+                <h2>Jeans 2</h2>
+                <p>Mi a justo vestibulum.</p>
+                <h3 class="product10 price">$69</h3>
+                <label class="quantityLabel" for="quantity">Qty</label>
+                <input class="product10 quantityInput" id="quantityInput10" type="number" value="1">
+                <button data-product-id="10" id="productBuyButton10" class="productBuyButton">Buy</button>
+            </div>
+        </div>
+        <hr>
+        <div class="product11 productDiv">
+            <img class="productImage" src="Images/jeans4.jpg">
+            <div class="productText">
+                <h2>Jeans 3</h2>
+                <p>Jaccumsan nascet vi.</p>
+                <h3 class="product11 price">$59</h3>
+                <label class="quantityLabel" for="quantity">Qty</label>
+                <input class="product11 quantityInput" id="quantityInput11" type="number" value="1">
+                <button data-product-id="11" class="productBuyButton">Buy</button>
+            </div>
+        </div>
+        <hr>
+        <div class="product12 productDiv">
+            <img class="productImage" src="Images/jeans6.jpg">
+            <div class="productText">
+                <h2>Jeans 4</h2>
+                <p>Torquent ridiculus mo.</p>
+                <h3 class="product12 price">$74</h3>
+                <label class="quantityLabel" for="quantity">Qty</label>
+                <input class="product12 quantityInput" id="quantityInput12" type="number" value="1">
+                <button data-product-id="12" class="productBuyButton">Buy</button>
+            </div>
+        </div>
+    </div>
+    <!-- <<<<<<<<<<<<<< CART PAGE >>>>>>>>>>>>>>>>>>>>>>>>> -->
+    <div id="cartPage">
+        <div class="cartPage">
+            <div class="productCart1 productDiv">
+                <img class="productImage" src="Images/everyday3.jpg">
+                <div class="productText">
+                    <h2>Everyday Shirt 1</h2>
+                    <p>Amet tortor euismo curae.</p>
+                    <h3 class="productPriceCalc">$79</h3>
+                    <div class="qtySubtotal">
+                      <div class="qtySubtotal1">
+                          <span>Quantity </span>
+                          <span class="qtyWrite"></span> <br>
+                          <span>$ </span>
+                          <span class="subtotalWrite"></span>
+                      </div>
+                    </div>
+                    <button data-cart-id="1" class="productRemoveButton">Remove</button>
+                </div>
+            </div>
+            <hr class="productCart1">
+            <div class="productCart2 productDiv">
+                <img class="productImage" src="Images/everyday4.jpg">
+                <div class="productText">
+                    <h2>Everyday Shirt 2</h2>
+                    <p>Id a ultricies a.</p>
+                    <h3 class="productPriceCalc">$69</h3>
+                    <div class="qtySubtotal">
+                      <div class="qtySubtotal2">
+                          <span>Quantity </span>
+                          <span class="qtyWrite"></span><br>
+                          <span>$ </span>
+                          <span class="subtotalWrite"></span>
+                      </div>
+                    </div>
+                    <button data-cart-id="2" class="productRemoveButton">Remove</button>
+                </div>
+            </div>
+            <hr class="productCart2">
+            <div class="productCart3 productDiv">
+                <img class="productImage" src="Images/everyday5.jpg">
+                <div class="productText">
+                    <h2>Everyday Shirt 3</h2>
+                    <p>Per volutpat eros condi.</p>
+                    <h3 class="productPriceCalc">$59</h3>
+                    <div class="qtySubtotal">
+                      <div class="qtySubtotal3">
+                          <span>Quantity </span>
+                          <span class="qtyWrite"></span><br>
+                          <span>$ </span>
+                          <span class="subtotalWrite"></span>
+                      </div>
+                    </div>
+                    <button data-cart-id="3" class="productRemoveButton">Remove</button>
+                </div>
+            </div>
+            <hr class="productCart3">
+            <div class="productCart4 productDiv">
+                <img class="productImage" src="Images/everyday6.jpg">
+                <div class="productText">
+                    <h2>Everyday Shirt 4</h2>
+                    <p>Lorem ipsum dolor sit ame.</p>
+                    <h3 class="productPriceCalc">$74</h3>
+                    <div class="qtySubtotal">
+                      <div class="qtySubtotal4">
+                          <span>Quantity </span>
+                          <span class="qtyWrite"></span><br>
+                          <span>$ </span>
+                          <span class="subtotalWrite"></span>
+                      </div>
+                    </div>
+                    <button data-cart-id="4" class="productRemoveButton">Remove</button>
+                </div>
+            </div>
+            <hr class="productCart4">
+            <div class="productCart5 productDiv">
+                <img class="productImage" src="Images/dress1.jpg">
+                <div class="productText">
+                    <h2>Dress Shirt 1</h2>
+                    <p>Sed ut perspiciatis unde.</p>
+                    <h3 class="productPriceCalc">$79</h3>
+                    <div class="qtySubtotal">
+                      <div class="qtySubtotal5">
+                          <span>Quantity </span>
+                          <span class="qtyWrite"></span><br>
+                          <span>$ </span>
+                          <span class="subtotalWrite"></span>
+                      </div>
+                    </div>
+                    <button data-cart-id="5" class="productRemoveButton">Remove</button>
+                </div>
+            </div>
+            <hr class="productCart5">
+            <div class="productCart6 productDiv">
+                <img class="productImage" src="Images/dress2.jpg">
+                <div class="productText">
+                    <h2>Dress Shirt 2</h2>
+                    <p>Quisque a integer par.</p>
+                    <h3 class="productPriceCalc">$69</h3>
+                    <div class="qtySubtotal">
+                      <div class="qtySubtotal6">
+                          <span>Quantity </span>
+                          <span class="qtyWrite"></span><br>
+                          <span>$ </span>
+                          <span class="subtotalWrite"></span>
+                      </div>
+                    </div>
+                    <button data-cart-id="=6" class="productRemoveButton">Remove</button>
+                </div>
+            </div>
+            <hr class="productCart6">
+            <div class="productCart7 productDiv">
+                <img class="productImage" src="Images/dress3.jpg">
+                <div class="productText">
+                    <h2>Dress Shirt 3</h2>
+                    <p>A eu sed inceptos quam.</p>
+                    <h3 class="productPriceCalc">$59</h3>
+                    <div class="qtySubtotal">
+                      <div class="qtySubtotal7">
+                          <span>Quantity </span>
+                          <span class="qtyWrite"></span><br>
+                          <span>$ </span>
+                          <span class="subtotalWrite"></span>
+                      </div>
+                    </div>
+                    <button data-cart-id="7" class="productRemoveButton">Remove</button>
+                </div>
+            </div>
+            <hr class="productCart7">
+            <div class="productCart8 productDiv">
+                <img class="productImage" src="Images/dress5.jpg">
+                <div class="productText">
+                    <h2>Dress Shirt 4</h2>
+                    <p>Ac nisl lacinia a.</p>
+                    <h3 class="productPriceCalc">$74</h3>
+                    <div class="qtySubtotal">
+                      <div class="qtySubtotal8">
+                          <span>Quantity </span>
+                          <span class="qtyWrite"></span><br>
+                          <span>$ </span>
+                          <span class="subtotalWrite"></span>
+                      </div>
+                    </div>
+                    <button data-cart-id="8" class="productRemoveButton">Remove</button>
+                </div>
+            </div>
+            <hr class="productCart8">
+            <div class="productCart9 productDiv">
+                <img class="productImage" src="Images/jeans2.jpg">
+                <div class="productText">
+                    <h2>Jeans 1</h2>
+                    <p>Vestibu feug condum felis.</p>
+                    <h3 class="productPriceCalc">$79</h3>
+                    <div class="qtySubtotal">
+                      <div class="qtySubtotal9">
+                          <span>Quantity </span>
+                          <span class="qtyWrite"></span><br>
+                          <span>$ </span>
+                          <span class="subtotalWrite"></span>
+                      </div>
+                    </div>
+                    <button data-cart-id="9" class="productRemoveButton">Remove</button>
+                </div>
+            </div>
+            <hr class="productCart9">
+            <div class="productCart10 productDiv">
+                <img class="productImage" src="Images/jeans3.jpg">
+                <div class="productText">
+                    <h2>Jeans 2</h2>
+                    <p>Mi a justo vestibulum.</p>
+                    <h3 class="productPriceCalc">$69</h3>
+                    <div class="qtySubtotal">
+                      <div class="qtySubtotal10">
+                          <span>Quantity </span>
+                          <span class="qtyWrite"></span><br>
+                          <span>$ </span>
+                          <span class="subtotalWrite"></span>
+                      </div>
+                    </div>
+                    <button data-cart-id="10" class="productRemoveButton">Remove</button>
+                </div>
+            </div>
+            <hr class="productCart10">
+            <div class="productCart11 productDiv">
+                <img class="productImage" src="Images/jeans4.jpg">
+                <div class="productText">
+                    <h2>Jeans 3</h2>
+                    <p>Jaccumsan nascet vi.</p>
+                    <h3 class="productPriceCalc">$59</h3>
+                    <div class="qtySubtotal">
+                      <div class="qtySubtotal11">
+                          <span>Quantity </span>
+                          <span class="qtyWrite"></span><br>
+                          <span>$ </span>
+                          <span class="subtotalWrite"></span>
+                      </div>
+                    </div>
+                    <button data-cart-id="11" id="productRemoveButton11" class="productRemoveButton">Remove</button>
+                </div>
+            </div>
+            <hr class="productCart11">
+            <div class="productCart12 productDiv">
+                <img class="productImage" src="Images/jeans6.jpg">
+                <div class="productText">
+                    <h2>Jeans 4</h2>
+                    <p>Torquent ridiculus mo.</p>
+                    <h3 class="productPriceCalc">$74</h3>
+                    <div class="qtySubtotal">
+                      <div class="qtySubtotal12">
+                          <span>Quantity </span>
+                          <span class="qtyWrite"></span><br>
+                          <span>$ </span>
+                          <span class="subtotalWrite"></span>
+                      </div>
+                    </div>
+                    <button data-cart-id="12" class="productRemoveButton">Remove</button>
+                </div>
+            </div>
+            <hr class="productCart12">
+        </div>
+        <h3>PAYMENT METHOD</h3>
+        <div id="payMethods">
+            <button type="button" class="paymentButton" id="cashButton">Cash</button>
+            <button type="button" class="paymentButton" id="creditCardButton">Credit Card</button>
+        </div>
+        <!-- <button type="button" class="paying" id="payNow">Pay Now</button> -->
+    </div>
+    <!-- replaced these with payment icon in nav -->
+    <!-- <div class="payment" id="paymentChoice" style="display: none;">
+        <h2>Pay with cash</h2>
+
+        <h2>Pay with Card</h2>
+    </div> -->
+
+    <!-- <<<<<<<<<<<<<< CREDIT CARD PAY >>>>>>>>>>>>>>>>>>>>>>>>> -->
+    <div class="payment" id="creditCardPay">
+        <h2>CREDIT CARD</h2>
+        <h4>Please enter your card info below</h4>
+        <form>
+            <div class="cc owner">
+                <label for="owner">Owner</label>
+                <input type="text" class="form-input" id="owner" required>
+            </div>
+            <div class="cc" id="card-number-field">
+                <label for="cardNumber">Card Number</label>
+                <input type="text" min-length="16" class="form-input" id="cardNumber" required>
+            </div>
+            <div class="cc CVV">
+                <label for="cvv">CVV</label>
+                <input type="text" class="form-input" id="cvv" required>
+            </div>
+            <div class="select-input" id="expiration-date">
+                <label id="expiry">Expiration Date</label>
+                <select id="month">
+                    <option value="01">January</option>
+                    <option value="02">February </option>
+                    <option value="03">March</option>
+                    <option value="04">April</option>
+                    <option value="05">May</option>
+                    <option value="06">June</option>
+                    <option value="07">July</option>
+                    <option value="08">August</option>
+                    <option value="09">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+                </select>
+                <select id="year">
+                    <option value="16"> 2018</option>
+                    <option value="17"> 2019</option>
+                    <option value="18"> 2020</option>
+                    <option value="19"> 2021</option>
+                    <option value="20"> 2022</option>
+                    <option value="21"> 2023</option>
+                </select>
+            </div>
+        </form>
+        <h3 class="nameFail">PLEASE ENTER NAME ON CARD</h3>
+        <h3 class="cardNumFail">PLEASE ENTER CARD NUMBER</h3>
+        <h3 class="cvvFail">PLEASE ENTER CARD CVV</h3>
+        <div id="ccPay">
+            <label id="cashTotalBeforeCC">
+                <p class="totalFormat">Subtotal: </p>
+                <p class="typeTo">$</p>
+            </label>
+            <label id="cashSalesTaxCC">
+                <p class="totalFormat">Sales Tax: </p>
+                <p class="typeTo">6%</p>
+            </label>
+            <hr>
+            <label id="cashPayTotalCC">
+                <p class="totalFormat">Total: </p>
+                <p class="typeTo">$</p>
+            </label>
+        </div>
+        <div class="cc" id="pay-now">
+            <button type="button" id="ccPayButton">Pay Now</button>
+        </div>
+    </div>
+    <!-- <<<<<<<<<<<<<< RECEIPT PAGE >>>>>>>>>>>>>>>>>>>>>>>>> -->
+    <div class="payment" id="receiptPage">
+        <h2 class="h2Receipt">RECEIPT</h2>
+        <div class="receiptPage">
+            <div class="productReceipt1 productDiv">
+                <img class="productImage" src="Images/everyday3.jpg">
+                <div class="productText">
+                    <h2>Everyday Shirt 1</h2>
+                    <p>Amet tortor euismo curae.</p>
+                    <div class="qtySubtotal">
+                      <div class="qtySubtotal1">
+                          <span>Quantity </span>
+                          <span class="qtyWrite"></span><br>
+                          <span>$ </span>
+                          <span class="subtotalWrite"></span>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            <hr class="productReceipt1">
+            <div class="productReceipt2 productDiv">
+                <img class="productImage" src="Images/everyday4.jpg">
+                <div class="productText">
+                    <h2>Everyday Shirt 2</h2>
+                    <p>Id a ultricies a.</p>
+                    <div class="qtySubtotal">
+                      <div class="qtySubtotal2">
+                          <span>Quantity </span>
+                          <span class="qtyWrite"></span><br>
+                          <span>$ </span>
+                          <span class="subtotalWrite"></span>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="productReceipt2">
+            <div class="productReceipt3 productDiv">
+                <img class="productImage" src="Images/everyday5.jpg">
+                <div class="productText">
+                    <h2>Everyday Shirt 3</h2>
+                    <p>Per volutpat eros condi.</p>
+                    <div class="qtySubtotal">
+                      <div class="qtySubtotal3">
+                          <span>Quantity </span>
+                          <span class="qtyWrite"></span><br>
+                          <span>$ </span>
+                          <span class="subtotalWrite"></span>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="productReceipt3">
+            <div class="productReceipt4 productDiv">
+                <img class="productImage" src="Images/everyday6.jpg">
+                <div class="productText">
+                    <h2>Everyday Shirt 4</h2>
+                    <p>Lorem ipsum dolor sit ame.</p>
+                    <div class="qtySubtotal">
+                      <div class="qtySubtotal4">
+                          <span>Quantity </span>
+                          <span class="qtyWrite"></span><br>
+                          <span>$ </span>
+                          <span class="subtotalWrite"></span>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="productReceipt4">
+            <div class="productReceipt5 productDiv">
+                <img class="productImage" src="Images/dress1.jpg">
+                <div class="productText">
+                    <h2>Dress Shirt 1</h2>
+                    <p>Sed ut perspiciatis unde.</p>
+                    <div class="qtySubtotal">
+                      <div class="qtySubtotal5">
+                          <span>Quantity </span>
+                          <span class="qtyWrite"></span><br>
+                          <span>$ </span>
+                          <span class="subtotalWrite"></span>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="productReceipt5">
+            <div class="productReceipt6 productDiv">
+                <img class="productImage" src="Images/dress2.jpg">
+                <div class="productText">
+                    <h2>Dress Shirt 2</h2>
+                    <p>Quisque a integer par.</p>
+                    <div class="qtySubtotal">
+                      <div class="qtySubtotal6">
+                          <span>Quantity </span>
+                          <span class="qtyWrite"></span><br>
+                          <span>$ </span>
+                          <span class="subtotalWrite"></span>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="productReceipt6">
+            <div class="productReceipt7 productDiv">
+                <img class="productImage" src="Images/dress3.jpg">
+                <div class="productText">
+                    <h2>Dress Shirt 3</h2>
+                    <p>A eu sed inceptos quam.</p>
+                    <div class="qtySubtotal">
+                      <div class="qtySubtotal7">
+                          <span>Quantity </span>
+                          <span class="qtyWrite"></span><br>
+                          <span>$ </span>
+                          <span class="subtotalWrite"></span>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="productReceipt7">
+            <div class="productReceipt8 productDiv">
+                <img class="productImage" src="Images/dress5.jpg">
+                <div class="productText">
+                    <h2>Dress Shirt 4</h2>
+                    <p>Ac nisl lacinia a.</p>
+                    <div class="qtySubtotal">
+                      <div class="qtySubtotal8">
+                          <span>Quantity </span>
+                          <span class="qtyWrite"></span><br>
+                          <span>$ </span>
+                          <span class="subtotalWrite"></span>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="productReceipt8">
+            <div class="productReceipt9 productDiv">
+                <img class="productImage" src="Images/jeans2.jpg">
+                <div class="productText">
+                    <h2>Jeans 1</h2>
+                    <p>Vestibu feug condum felis.</p>
+                    <div class="qtySubtotal">
+                      <div class="qtySubtotal9">
+                          <span>Quantity </span>
+                          <span class="qtyWrite"></span><br>
+                          <span>$ </span>
+                          <span class="subtotalWrite"></span>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="productReceipt9">
+            <div class="productReceipt10 productDiv">
+                <img class="productImage" src="Images/jeans3.jpg">
+                <div class="productText">
+                    <h2>Jeans 2</h2>
+                    <p>Mi a justo vestibulum.</p>
+                    <div class="qtySubtotal">
+                      <div class="qtySubtotal10">
+                          <span>Quantity </span>
+                          <span class="qtyWrite"></span><br>
+                          <span>$ </span>
+                          <span class="subtotalWrite"></span>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="productReceipt10">
+            <div class="productReceipt11 productDiv">
+                <img class="productImage" src="Images/jeans4.jpg">
+                <div class="productText">
+                    <h2>Jeans 3</h2>
+                    <p>Jaccumsan nascet vi.</p>
+                    <div class="qtySubtotal">
+                      <div class="qtySubtotal11">
+                          <span>Quantity </span>
+                          <span class="qtyWrite"></span><br>
+                          <span>$ </span>
+                          <span class="subtotalWrite"></span>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="productReceipt11">
+            <div class="productReceipt12 productDiv">
+                <img class="productImage" src="Images/jeans6.jpg">
+                <div class="productText">
+                    <h2>Jeans 4</h2>
+                    <p>Torquent ridiculus mo.</p>
+                    <div class="qtySubtotal">
+                      <div class="qtySubtotal12">
+                          <span>Quantity </span>
+                          <span class="qtyWrite"></span><br>
+                          <span>$ </span>
+                          <span class="subtotalWrite"></span>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="productReceipt12">
+        </div>
+        <div id="invoice">
+            <div id="invoicePayment">
+                <p>Payment Type: </p>
+                <p class="invoiceWrite"></p>
+            </div>
+            <div id="invoiceCard">
+                <p>Card Number:</p>
+                <p class="invoiceWrite"></p>
+            </div>
+            <div id="invoiceTotal">
+                <p>Total: </p>
+                <p class="invoiceWrite"></p>
+            </div>
+            <div id="invoiceCashPaid">
+                <p>Paid: </p>
+                <p class="invoiceWrite"></p>
+            </div>
+            <div id="invoiceCashChange">
+                <p>Change: </p>
+                <p class="invoiceWrite"></p>
+            </div>
+        </div>
+    </div>
+    <!-- <<<<<<<<<<<<<< CASH PAY >>>>>>>>>>>>>>>>>>>>>>>>> -->
+    <div class="payment" id="cashPay">
+        <label class="cashTendered2">
+            <p class="cashLabel">Cash Tendered</p>
+            <input type="text" id="cashTendered" placeholder="Enter cash amount" />
+        </label>
+        <h3 class="cashFormFail">PLEASE FILL OUT FORM</h3>
+        <h3 class="cashFail">INSUFFICIENT FUNDS</h3>
+        <label id="cashTotalBefore">
+            <p class="totalFormat">Subtotal: </p>
+            <p class="typeTo">$</p>
+        </label>
+        <label id="cashSalesTax">
+            <p class="totalFormat">Sales Tax: </p>
+            <p class="typeTo">6%</p>
+        </label>
+        <hr>
+        <label id="cashPayTotal">
+            <p class="totalFormat">Total: </p>
+            <p class="typeTo">$</p>
+        </label>
+        <button type="button" class="cashPaySubmit">Pay Now</button>
+    </div>
+    </div>
+    <script src="Scripts/script.js"></script>
+    <script src="Scripts/jquery.maskedinput.js"></script>
+    <script>
+        $("#cvv").mask("999");
+        $("#cardNumber").mask("9999-9999-9999-9999");
+    </script>
+
+
+</body>
+<div class="footer">
+    <hr class="footer">
+    <p id="emailHeadline">Join us, you will look marvelous</p>
+    <div id="emailFooter">
+        <input type="email" placeholder="Your email" />
+        <button id="emailButton" type:submit>JOIN US</button>
+    </div>
+</div>
+
+</html>
